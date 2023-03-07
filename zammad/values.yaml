@@ -164,6 +164,7 @@ zammadConfig:
     # needs to be the same as the redis.auth.password
     pass: zammad
     port: 6379
+    db: 0
     tls: false
 
   scheduler:
