@@ -164,6 +164,7 @@ zammadConfig:
     # needs to be the same as the redis.auth.password
     pass: zammad
     port: 6379
+    tls: false
 
   scheduler:
     resources: {}
@@ -420,6 +421,13 @@ elasticsearch:
     heapSize: 512m
     masterOnly: false
     replicaCount: 1
+    resources: { }
+    # limits:
+    #   cpu: 250m
+    #   memory: 256Mi
+    # requests:
+    #   cpu: 250m
+    #   memory: 256Mi
 
 # settings for the memcached subchart
 memcached:
